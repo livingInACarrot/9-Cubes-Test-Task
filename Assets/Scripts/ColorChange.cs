@@ -30,7 +30,7 @@ public class ColorChange : MonoBehaviour
 
     void Start()
     {
-        string path = @"..\Test task\Assets\Files\test_1.txt";
+        string path = Path.Combine(Directory.GetCurrentDirectory(), "Assets", "Files", "test_1.txt");
 
         using (StreamReader reader = new(path))
         {
@@ -57,7 +57,7 @@ public class ColorChange : MonoBehaviour
         if (cooldown < 0.2f)
             return;
 
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.W))
         {
             --current[0];
             if (current[0] < 0)
@@ -66,7 +66,7 @@ public class ColorChange : MonoBehaviour
             Recolor();
         }
 
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.S))
         {
             ++current[0];
             if (current[0] > textArray.Length - 1)
@@ -75,7 +75,7 @@ public class ColorChange : MonoBehaviour
             Recolor();
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A))
         {
             --current[1];
             if (current[1] < 0)
@@ -84,7 +84,7 @@ public class ColorChange : MonoBehaviour
             Recolor();
         }
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D))
         {
             ++current[1];
             if (current[1] > textArray[0].Length - 1)
