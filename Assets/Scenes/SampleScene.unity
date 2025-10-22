@@ -1264,7 +1264,7 @@ GameObject:
   - component: {fileID: 1597462833}
   - component: {fileID: 1597462834}
   m_Layer: 0
-  m_Name: Cubes Holder
+  m_Name: Cubes Handler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1306,6 +1306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 890bc1db080e58e4f96663bfda7883e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stretchMatrix: 0
   colors:
   - {r: 0, g: 0, b: 0, a: 0}
   - {r: 0.8396226, g: 0.069118746, b: 0.011881431, a: 0}

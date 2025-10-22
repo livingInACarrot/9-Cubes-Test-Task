@@ -3,7 +3,7 @@ using UnityEngine;
 public class Cube : MonoBehaviour
 {
     private MeshRenderer meshRenderer;
-    public void Start()
+    public void Awake()
     {
         meshRenderer = GetComponent<MeshRenderer>();
     }
