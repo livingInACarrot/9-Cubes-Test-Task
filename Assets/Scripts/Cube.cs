@@ -12,4 +12,8 @@ public class Cube : MonoBehaviour
     {
         meshRenderer.material.color = newColor;
     }
+    public void SuckAss()
+    {
+        // Bruh
+    }
 }
